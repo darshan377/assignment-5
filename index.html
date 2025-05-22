@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+
+    <!-- poppins font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+    .poppins-font {
+  font-family: "Poppins", sans-serif;
+}
+</style>
+
+     <!-- tailwind CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisyUI -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-red-300 poppins-font py-6">
+<section class="max-w-screen-2xl min-h-screen  mx-auto bg-slate-500">
+       <header>
+        <nav class="flex justify-between items-center bg-[#FFFFFF] p-5">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="">
+                <h2 class="text-4xl">Dev<span class="font-bold">Board</span>
+                </h2>
+            </div>
+
+            <div class="flex gap-9">
+                <div class="flex items-center gap-4">
+                    <img src="assets/checkbox.png" alt="">
+                    <h3 class="text-3xl font-bold">23</h3>
+                </div>
+                <img src="assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+   </header>
+
+   <main>
+    <section class="grid grid-cols-4 gap-6">
+
+        <div class="flex justify-center items-center gap-4 bg-[#F4F7FF] border-4 p-6">
+        <img class="" src="assets/checkbox.png" alt="">
+        <div>
+            <p class="text-[#00303C] text-xl font-medium">task assigned</p>
+            <h3 class="font-bold text-3xl">06</h3>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center gap-5 col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+        <img src="assets/board.png" alt="">
+        <p class="text-2xl font-normal text-white">discover something <br>New today!</p>
+      </div>
+
+      <div class="flex justify-center items-center gap-4 bg-[#F4F7FF] border-4 p-6">
+        <img class="" src="assets/calender.png" alt="">
+        <div>
+            <p class="text-[#00303C] text-xl font-medium">Wed,</p>
+            <h3 class="font-bold text-3xl">JUL 28 2025</h3>
+        </div>
+      </div>
+
+    </section>
+
+   </main>
+</section>
+</body>
+</html>
