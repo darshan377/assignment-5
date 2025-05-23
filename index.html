@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-red-300 poppins-font py-6">
+<body class="bg-[#F4F7FF]  poppins-font py-6">
 <section class="max-w-screen-2xl min-h-screen  mx-auto bg-[#FFFFFF]">
        <header class="mx-6 mt-6">
         <nav class="flex justify-between items-center bg-[#FFFFFF] p-5">
@@ -37,9 +37,9 @@
             <div class="flex gap-9">
                 <div class="flex items-center gap-4">
                     <img src="assets/checkbox.png" alt="">
-                    <h3 id="nav-number" class="text-3xl font-bold">23</h3>
+                    <h3 id="nav-number" class="text-3xl font-bold">63</h3>
                 </div>
-                <img src="assets/theme-btn.png" alt="">
+                <img id="btn-theme" class="cursor-pointer" src="assets/theme-btn.png" alt="">
             </div>
         </nav>
    </header>
@@ -49,7 +49,7 @@
         <section>
             <div class="grid grid-cols-4 gap-6 mt-6 mx-6">
 
-        <div class="flex justify-center items-center gap-4 bg-[#F4F7FF] border-4 p-6">
+        <div class="flex justify-center items-center gap-4 bg-[#F4F7FF] rounded-2xl p-6">
         <img class="" src="assets/checkbox.png" alt="">
         <div>
             <p class="text-[#00303C] text-xl font-medium">task assigned</p>
@@ -57,15 +57,15 @@
         </div>
       </div>
 
-      <div class="flex justify-center items-center gap-5 col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+      <div id="discover-part" class="flex justify-center items-center gap-5 col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] cursor-pointer">
         <img src="assets/board.png" alt="">
         <p class="text-2xl font-normal text-white">discover something <br>New today!</p>
       </div>
 
-      <div class="flex justify-center items-center gap-4 bg-[#F4F7FF] border-4 p-6">
+      <div class="flex justify-center items-center gap-4 bg-[#F4F7FF] rounded-2xl p-6">
         <img class="" src="assets/calender.png" alt="">
         <div>
-            <p class="text-[#00303C] text-xl font-medium">Wed,</p>
+            
             <h3 id="date" class="font-bold text-3xl">
                26 july 2025
             </h3>
@@ -76,7 +76,7 @@
 
     <div class="grid grid-cols-3 gap-8 mt-10 mx-6">
     <!-- 1st card -->
-    <div class="bg-[#F4F7FF] border-4 space-y-4 p-5">
+    <div class="bg-[#F4F7FF] rounded-2xl space-y-4 p-5">
       <div class="space-y-4">
             <p class="bg-[#FFFFFF] px-2 py-4">ShopEase</p>
             <h4 id="card-1-title" class="text-2xl font-medium">Fix mobile button issue</h4>
@@ -95,7 +95,7 @@
     </div>
          
     <!-- 2nd card -->
-    <div class="bg-[#F4F7FF] border-4 space-y-4 p-5">
+    <div class="bg-[#F4F7FF] rounded-2xl space-y-4 p-5">
       <div class="space-y-4">
             <p class="bg-[#FFFFFF] px-2 py-4">ShopEase</p>
             <h4 id="card-2-title" class="text-2xl font-medium">Add Dark Mode</h4>
@@ -113,7 +113,7 @@
     </div>
     
     <!-- 3rd card -->
-    <div class="bg-[#F4F7FF] border-4 space-y-4 p-5">
+    <div class="bg-[#F4F7FF] rounded-2xl space-y-4 p-5">
       <div class="space-y-4">
             <p class="bg-[#FFFFFF] px-2 py-4">ShopEase</p>
             <h4 id="card-3-title" class="text-2xl font-medium">Optimize  Home page </h4>
@@ -132,7 +132,7 @@
     </div>
 
     <!-- 4th card -->
-    <div class="bg-[#F4F7FF] border-4 space-y-4 p-5">
+    <div class="bg-[#F4F7FF] rounded-2xl space-y-4 p-5">
       <div class="space-y-4">
             <p class="bg-[#FFFFFF] px-2 py-4">ShopEase</p>
             <h4 id="card-4-title" class="text-2xl font-medium">Add new emoji 🤲</h4>
@@ -151,7 +151,7 @@
     </div>
 
     <!-- 5th card -->
-    <div class="bg-[#F4F7FF] border-4 space-y-4 p-5">
+    <div class="bg-[#F4F7FF] rounded-2xl space-y-4 p-5">
       <div class="space-y-4">
             <p class="bg-[#FFFFFF] px-2 py-4">ShopEase</p>
             <h4 id="card-5-title" class="text-2xl font-medium">Integrate OpenAI API</h4>
@@ -170,7 +170,7 @@
     </div>
 
     <!-- 6th card -->
-    <div class="bg-[#F4F7FF] border-4 space-y-4 p-5">
+    <div class="bg-[#F4F7FF] rounded-2xl space-y-4 p-5">
       <div class="space-y-4">
             <p class="bg-[#FFFFFF] px-2 py-4">ShopEase</p>
             <h4 id="card-6-title" class="text-2xl font-medium">Improve Job searching </h4>
@@ -191,13 +191,13 @@
     </section>
 
     <section>
-            <div class="min-h-screen border-4 bg-[#FFFFFF] pt-8 px-24 mt-6 mr-8 space-y-4">
+            <div class="min-h-screen rounded-2xl bg-[#FFFFFF] pt-8 px-24 mt-6 mr-8 space-y-4">
         <div class="flex gap-2 justify-center items-center">
             <img src="assets/activity.png" alt="">
             <p class="whitespace-nowrap">activity log</p>
         </div>
 
-        <button class="bg-[#3752FD] px-3 py-4 rounded-lg text-white whitespace-nowrap">clear history</button>
+        <button id="btn-clear-history" class="bg-[#3752FD] px-3 py-4 rounded-lg text-white whitespace-nowrap">clear history</button>
 
          <div id="history-part">
 
@@ -214,5 +214,6 @@
 <!-- javascript connection -->
  <script src="script.js"></script>
  <script src="common.js"></script>
+ 
 </body>
 </html>

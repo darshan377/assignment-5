@@ -13,3 +13,4 @@ function setInnerText(id,value){
 function setDisable(id,value){
     document.querySelector(id).disabled = value;
 }
+

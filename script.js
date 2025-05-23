@@ -2,6 +2,7 @@
 const newDate = new Date();
 document.getElementById('date').innerText = newDate;
 
+
 // btn-1
 document.getElementById('btn-1').addEventListener('click',function(event){
     event.preventDefault();
@@ -12,6 +13,10 @@ document.getElementById('btn-1').addEventListener('click',function(event){
     const taskNumber = getInnerTextById('task-number');
 
     const newTaskNumber = taskNumber - 1;
+
+     if(newTaskNumber === 0){
+    alert('congrats :) !!! all task completed...');
+     }
 
     setInnerText('task-number',newTaskNumber);
 
@@ -53,6 +58,10 @@ document.getElementById('btn-2').addEventListener('click',function(event){
 
     const newTaskNumber = taskNumber - 1;
 
+     if(newTaskNumber === 0){
+    alert('congrats :) !!! all task completed...');
+     }
+
     setInnerText('task-number',newTaskNumber);
 
     //in case of nav number
@@ -90,6 +99,10 @@ document.getElementById('btn-3').addEventListener('click',function(event){
     const taskNumber = getInnerTextById('task-number');
 
     const newTaskNumber = taskNumber - 1;
+
+     if(newTaskNumber === 0){
+    alert('congrats :) !!! all task completed...');
+     }
 
     setInnerText('task-number',newTaskNumber);
 
@@ -129,6 +142,10 @@ document.getElementById('btn-4').addEventListener('click',function(event){
 
     const newTaskNumber = taskNumber - 1;
 
+     if(newTaskNumber === 0){
+    alert('congrats :) !!! all task completed...');
+     }
+
     setInnerText('task-number',newTaskNumber);
 
     //in case of nav number
@@ -166,6 +183,10 @@ document.getElementById('btn-5').addEventListener('click',function(event){
     const taskNumber = getInnerTextById('task-number');
 
     const newTaskNumber = taskNumber - 1;
+
+     if(newTaskNumber === 0){
+    alert('congrats :) !!! all task completed...');
+}
 
     setInnerText('task-number',newTaskNumber);
 
@@ -205,6 +226,10 @@ document.getElementById('btn-6').addEventListener('click',function(event){
 
     const newTaskNumber = taskNumber - 1;
 
+    if(newTaskNumber === 0){
+    alert('congrats :) !!! all task completed...');
+}
+
     setInnerText('task-number',newTaskNumber);
 
     //in case of nav number
@@ -231,3 +256,34 @@ document.getElementById('btn-6').addEventListener('click',function(event){
 
     historyContainer.appendChild(div);
 })
+
+// clear history button
+
+document.getElementById('btn-clear-history').addEventListener('click',function(event){
+    event.preventDefault();
+
+    document.getElementById('history-part').style.display = 'none';
+})
+
+
+
+
+// discover button
+
+document.getElementById('discover-part').addEventListener('click',function(){
+    window.location.href = "answer.html";
+})
+
+
+// color button
+
+document.getElementById('btn-theme').addEventListener('click',function(){
+    const color = Math.round(Math.random()*16777215).toString(16);
+
+    document.body.style.backgroundColor = "#"+color;
+})
+
+
+
+
+
